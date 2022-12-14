@@ -1,0 +1,32 @@
+.card-product-basket {
+   padding: 20px;
+   border: 1px solid #F3F3F3;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   &:not(:last-child) {
+      margin-bottom: 20px;
+   }
+   &__img {
+      width: 70px;
+      height: 70px;
+      display: block;
+      object-fit: scale-down;
+      margin-right: 20px;
+   }
+   &__info {
+      max-width: 150px;
+   }
+   &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 8px;
+   }
+   &__price {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+   }
+}

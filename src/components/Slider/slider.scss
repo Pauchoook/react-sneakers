@@ -1,0 +1,44 @@
+.slider {
+   position: relative;
+   margin-bottom: 40px;
+   &__slide {
+      padding: 50px 60px;
+      position: relative;
+      min-height: 300px;
+      border-radius: 20px;
+      background: url('./../../../public/img/bg-slider.jpg') right top / 640px 100% no-repeat;
+      background-color: #F4EFE9;
+   }
+   &__slide-logo {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      top: 15px;
+      left: 20px;
+   }  
+   &__slide-title {
+      max-width: 240px;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      margin: 20px 0px 10px 0px;
+      span {
+         color: #8BB43C;
+      }
+   }
+   &__slide-btn {
+      width: 180px;
+      height: 40px;
+      background-color: #A5D364;
+      border-radius: 110px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: white;
+      text-transform: uppercase;
+      transition: background-color .2s ease;
+      &:hover {
+         background-color: #8BB43C;
+      }
+   }
+}

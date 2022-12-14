@@ -1,0 +1,59 @@
+.basket {
+   &.open {
+      .basket__overlay {
+         background-color: rgba(0, 0, 0, .5);
+         z-index: 100;
+      }
+      .basket__menu {
+         transform: translateX(0);
+         z-index: 110;
+      }
+   }
+   &__overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -10;
+      transition: background-color .2s ease-in-out;
+   }
+   &__menu {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      max-width: 385px;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: white;
+      transform: translateX(385px);
+      z-index: -10;
+      transition: transform .2s ease-in-out;
+   }
+   &__menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+   }
+   &__btn {
+      margin-left: auto;
+      opacity: .7;
+      transition: opacity .2s ease;
+      &:hover {
+         opacity: 1;
+      }
+   }
+   &__title {
+      font-size: 24px;
+      line-height: 29px;
+   }
+   &__list-items {
+      flex: 1;
+      padding-bottom: 15px;
+      overflow: auto;
+   }
+}

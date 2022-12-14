@@ -1,0 +1,22 @@
+.btn-slider {
+   position: absolute;
+   top: calc(50% - 17px);
+   width: 35px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border-radius: 50%;
+   z-index: 10;
+   &.next {
+      right: -17px;
+   }
+   &.prev {
+      left: -17px;
+   }
+   &__img {
+      width: 5px;
+      height: 10px;
+   }
+}

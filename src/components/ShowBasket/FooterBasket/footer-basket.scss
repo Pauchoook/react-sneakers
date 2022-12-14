@@ -1,0 +1,54 @@
+.footer-basket {
+   &__list {
+      width: 100%;
+      margin-bottom: 25px;
+   }
+   &__item {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+   &__title {
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 9px;
+      white-space: nowrap;
+   }
+   &__line {
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed #DFDFDF;
+      margin-right: 8px;
+   }
+   &__price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      white-space: nowrap;
+   }
+   &__btn {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: #9DD558;
+      border-radius: 18px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: white;
+      transition: background-color .2s ease-in-out;
+      span {
+         margin: 0 auto;
+      }
+      &:hover {
+         background-color: #709b3d;
+      }
+   }
+   &__img {
+      width: 15px;
+      height: 15px;
+   }
+}
